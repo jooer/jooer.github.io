@@ -3,9 +3,7 @@
 body{
   background-color: #E8E2F0;
   border:4px solid #5A5865;
-  border-top-left-radius: 100px;
-border-top-right-radius: 50px;
-border-bottom-right-radius: 100px;
+  border-radius:30px;
   font-family: 'Source Code Pro', sans-serif;
 }
 
