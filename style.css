@@ -17,9 +17,8 @@ h1
   font-size:20px;
    text-shadow: 3px 2px red;
    font-family: serif;
-  /* border:2px solid #4183D5;
-  border-radius: 100px; */
-  border-bottom: 6px solid #4183D5;
+   border:2px solid #4183D5;
+  border-top-right-radius: 50px;
    background-color: lightgrey;
 }
 
