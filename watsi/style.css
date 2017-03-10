@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,500);
+
+body {
+    padding-top: 90px;
+    background:#F7F7F7;
+    color:#009688;
+    font-family: 'Roboto', sans-serif;
+    font-weight:100;
+}
+
+body{
+    width: 100%;
+    background: -webkit-linear-gradient(left, #009688, #009688, #009688, #009688);
+    background: linear-gradient(to right, #009688, #009688, #009688, #009688);
+    background-size: 100% 100%;
+    -webkit-animation: HeroBG 20s ease infinite;
+    animation: HeroBG 20s ease infinite;
+}
