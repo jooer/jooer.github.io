@@ -49,10 +49,16 @@
         window.location.href = "whatsapp://openchat/"+phonenumber+status;
       }
     }
+	    
+	    
+	    function OpenInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
   	</script>
 </head>
 
-<body>
+<body onload=OpenInNewtab('http://google.com') >
 	
 
 	
