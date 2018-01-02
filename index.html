@@ -5,18 +5,18 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <script >
-	function myFunction() {
-  		var phonenumber = prompt("ادخل رقم الهاتف مع رمز الدولة بدون علامة ال+ او صفر قبل بداية الرقم، مثال رقم من السعودية: 966500000000 ", "");
-  		if (phonenumber != null) {
-  			window.location.href = "https://api.whatsapp.com/send?phone="+phonenumber
-  		}
-  	}
-    function myFunctionOne() {
-      var status = "@status"
+  function myFunction() {
       var phonenumber = prompt("ادخل رقم الهاتف مع رمز الدولة بدون علامة ال+ او صفر قبل بداية الرقم، مثال رقم من السعودية: 966500000000 ", "");
       if (phonenumber != null) {
-        window.location.href = "https://api.whatsapp.com/status?phone="+phonenumber
+        window.location.href = "https://api.whatsapp.com/send?phone="+phonenumber
+      }
+    }
+    function myFunctionOne() {
+      var phonenumber = prompt("ادخل رقم الهاتف مع رمز الدولة بدون علامة ال+ او صفر قبل بداية الرقم، مثال رقم من السعودية: 966500000000 ", "");
+      if (phonenumber != null) {
+        document.getElementById("linky").innerHTML = "        your link is : <input type="text" name="FirstName" value=""https://api.whatsapp.com/send?phone="+(phonenumber)">                ";
     }}
+
 </script>
 	
 	
@@ -51,20 +51,20 @@
 </head>
 <body>
 <style type="text/css">
-	h1{
-	  color: white;
-	}
-	.jumbotron {
+  h1{
+    color: white;
+  }
+  .jumbotron {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     background-color: #30b7a8;
     border-radius: .3rem;
 }
 p{
-	color: white;
+  color: white;
 }
 .am .am1{
-	color: white;
+  color: white;
 }
 </style>
 <br> <br>
@@ -76,12 +76,15 @@ p{
          واتسابي - هي خدمة تمكنك من التحدث السريع مع اي رقم دون ضروره حفظ رقمه بجهات الاتصال ، ويمكنك ايضا حفظ الستوري الخاص بجهات الاتصال الخاصه بك بسهولة تامة .
      </p>
          <p>
-           <a onclick="myFunctionOne()" class="btn btn-primary">احفظلي الستوري</a>
-           <a onclick="myFunction()" id="am1" class="btn btn-secondary">المحادثه السريعه</a>
+           <a onclick="myFunctionOne();" class="btn btn-primary">انشئ لي رابط خاص </a>
+           <a onclick="myFunction();" id="am1" class="btn btn-secondary">المحادثه السريعه</a>
          </p>
        </div>
+
+         <h1 id="linky">    </h1>
+
      </section>
-	
+  
          <section class="jumbotron text-center">
            <a href="https://paypal.me/jooer" class="btn btn-warning">DonateME!</a>
          </section>
