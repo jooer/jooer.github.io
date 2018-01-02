@@ -1,111 +1,66 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> واتسابي </title>
-    <!-- Fonts -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//linkshrink.net/7r4Z5i"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-93804491-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
-
-
-	
-    <script>
-  	function myFunction() {
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" >
+<script >
+	function myFunction() {
   		var phonenumber = prompt("ادخل رقم الهاتف مع رمز الدولة بدون علامة ال+ او صفر قبل بداية الرقم، مثال رقم من السعودية: 966500000000 ", "");
   		if (phonenumber != null) {
-  			window.location.href = "whatsapp://openchat/"+phonenumber;
+  			window.location.href = "https://api.whatsapp.com/send?phone="+phonenumber
   		}
   	}
     function myFunctionOne() {
       var status = "@status"
       var phonenumber = prompt("ادخل رقم الهاتف مع رمز الدولة بدون علامة ال+ او صفر قبل بداية الرقم، مثال رقم من السعودية: 966500000000 ", "");
       if (phonenumber != null) {
-        window.location.href = "whatsapp://openchat/"+phonenumber+status;
-      }
+        window.location.href = "https://api.whatsapp.com/status?phone="+phonenumber
     }
-	    
+</script>
+<title>واتسابي</title>
+<script type="text/javascript" src="Func.js"></script>
 
-  	</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6724310430643321",
+    enable_page_level_ads: true
+  });
+</script>
 </head>
-
 <body>
-	
-
-	
-	
-  <div class="container">
-<br/>
-              <div class="panel panel-login">
-
-<div class="panel-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-
-                          </div>
-                          <br/>
-                          <div class="savely">
-<br/>
-                          <h4 class="titlesb">  . احفظلي الستوري <h4/>
-                             <hr class="message-inner-separator">
-<br/>
-                            <p>
-                          واتسابي احفظلي تمكنك من حفظ حاله جهات الاتصال لديك "ستوري الواتس " بسهوله تامه وبدون عناء فقط اضغط عليى الايقونه بالاسفل وادخل الرقم .
-                              </p>
-                          <br/>
-                              <button href="http://www.microsoft.com" target="_blank" onclick="javascript:myFunctionOne();" type="button">
-                                                                           احفظلي الستوري  </button>
-
-                                                                           <br/> <br/>
-                          </div>
-
-      <br/>
-
-                        <!--- <div class="clicky">
-<br/>
-                          <h4 class="titlesb1">اضغط و تحدث</h4>
-                           <hr class="message-inner-separator">
-                          <p>
-                          واتسابي اضغط وتحدث تمكنك من التحدث مع اي شخص دون حفظ رقمه بجهات الاتصال بسهوله تامه فقط اضغط على الايقونه بالاسفل وادخل الرقم
-                          </p>
-                          <br/>
-                          <button onclick="javascript:myFunction();" type="button">
-                                                                      اضغط و تحدث  </button>
-                                                                      <br/> <br/>
-                          </div>  -->
+<style type="text/css">
+	h1{
+	  color: white;
+	}
+	.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #30b7a8;
+    border-radius: .3rem;
+}
+p{
+	color: white;
+}
+.am .am1{
+	color: white;
+}
+</style>
+<br> <br> <br> <br>
+  <section class="jumbotron text-center">
+       <div class="container">
+         <h1 class="jumbotron-heading">واتسابي</h1>
+         <br>
+         <p>
+         واتسابي - هي خدمة تمكنك من التحدث السريع مع اي رقم دون ضروره حفظ رقمه بجهات الاتصال ، ويمكنك ايضا حفظ الستوري الخاص بجهات الاتصال الخاصه بك بسهولة تامة .
+     </p>
+         <p>
+           <a onclick="myFunctionOne()" class="btn btn-primary">احفظلي الستوري</a>
+           <a onclick="myFunction()" id="am1" class="btn btn-secondary">المحادثه السريعه</a>
+         </p>
+       </div>
+     </section>
 
 
-                                            </div>
-                                            
-                                            <h5> This WebSite Coded with <i class="fa fa-heart red" style="color: #BC0213;"> </i> by <a href="mailto:i@jarallah.me" target="_blank"> jarallah </a>
-                                            <h5/>
 
-	</script>
-
-  </body>
-  </html>
+</body>
+</html>
