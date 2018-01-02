@@ -1,21 +1,20 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html>
  <head>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
- 	<meta charset="utf-8">
+  <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  <script >
- 	function myFunction() {
-   		var phonenumber = prompt("ادخل رقم الهاتف مع رمز الدولة بدون علامة ال+ او صفر قبل بداية الرقم، مثال رقم من السعودية: 966500000000 ", "");
-   		if (phonenumber != null) {
-   			window.location.href = "https://api.whatsapp.com/send?phone="+phonenumber
-   		}
-   	}
+  function myFunction() {
+      var phonenumber = prompt("ادخل رقم الهاتف مع رمز الدولة بدون علامة ال+ او صفر قبل بداية الرقم، مثال رقم من السعودية: 966500000000 ", "");
+      if (phonenumber != null) {
+        window.location.href = "https://api.whatsapp.com/send?phone="+phonenumber
+      }
+    }
      function myFunctionOne() {
-       var status = "@status"
        var phonenumber = prompt("ادخل رقم الهاتف مع رمز الدولة بدون علامة ال+ او صفر قبل بداية الرقم، مثال رقم من السعودية: 966500000000 ", "");
        if (phonenumber != null) {
-          window.location.href = "https://api.whatsapp.com/status?phone="+phonenumber
+         document.getElementById("demo").src = "https://is.gd/create.php?format=simple&url=https://api.whatsapp.com/send?phone="+phonenumber
       }}
   </script>
 
@@ -28,8 +27,8 @@
  </script>
 
   <title>واتسابي</title>
-  	
-  	<!-- Global site tag (gtag.js) - Google Analytics -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93804491-1"></script>
  <script>
    window.dataLayer = window.dataLayer || [];
@@ -42,20 +41,20 @@
  </head>
  <body>
  <style type="text/css">
- 	h1{
- 	  color: white;
- 	}
- 	.jumbotron {
+  h1{
+    color: white;
+  }
+  .jumbotron {
      padding: 2rem 1rem;
      margin-bottom: 2rem;
      background-color: #30b7a8;
      border-radius: .3rem;
  }
  p{
- 	color: white;
+  color: white;
  }
  .am .am1{
- 	color: white;
+  color: white;
  }
  </style>
  <br> <br>
@@ -67,12 +66,13 @@
           واتسابي - هي خدمة تمكنك من التحدث السريع مع اي رقم دون ضروره حفظ رقمه بجهات الاتصال ، ويمكنك ايضا حفظ الستوري الخاص بجهات الاتصال الخاصه بك بسهولة تامة .
       </p>
           <p>
-            <a onclick="myFunctionOne()" class="btn btn-primary">احفظلي الستوري</a>
+            <a onclick="myFunctionOne()" class="btn btn-primary">انشئ رابط مباشر</a>
             <a onclick="myFunction()" id="am1" class="btn btn-secondary">المحادثه السريعه</a>
           </p>
         </div>
+<iframe frameborder="0" width="150" height="40" id="demo"></iframe>
       </section>
- 	
+  
           <section class="jumbotron text-center">
             <a href="https://paypal.me/jooer" class="btn btn-warning">DonateME!</a>
           </section>
