@@ -2,6 +2,7 @@
  <html>
  <head>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+ <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  <script >
@@ -50,13 +51,22 @@
      background-color: #30b7a8;
      border-radius: .3rem;
  }
+ .jumbotron-heading{
+ }
  p{
   color: white;
  }
  .am .am1{
   color: white;
  }
+
+.em, .em-svg {
+    height: 1em;
+    width: 1em;
+
+
  </style>
+
  <br> <br>
    <section class="jumbotron text-center">
         <div class="container">
@@ -65,17 +75,24 @@
           <p>
           واتسابي - هي خدمة تمكنك من التحدث السريع مع اي رقم دون ضروره حفظ رقمه بجهات الاتصال ، ويمكنك ايضا انشاء رابط مباشر لرقمك لمشاركته مع الاخرين 
       </p>
+      <br>
           <p>
-            <a onclick="myFunctionOne()" class="btn btn-primary">انشئ رابط مباشر</a>
-            <a onclick="myFunction()" id="am1" class="btn btn-secondary">المحادثه السريعه</a>
+            <a onclick="myFunctionOne()" class="btn btn-primary">
+              <i class="em em-link"></i>
+            انشئ رابط مباشر</a>
+            <a onclick="myFunction()" id="am1" class="btn btn-secondary">
+              <i class="em em-zap"></i> المحادثه السريعه </a>
           </p>
         </div>
 <iframe frameborder="0" width="150" height="40" id="demo"></iframe>
       </section>
   
           <section class="jumbotron text-center">
-            <a href="https://paypal.me/jooer" class="btn btn-warning">DonateME!</a>
+            <a href="https://paypal.me/jooer" class="btn btn-warning">DonateME! <i class="em em-black_heart"></i> </a>
+            <a href="mailto:i@jarallah.me" class="btn btn-dark" >EmailMe? <i class="em em-email"></i><a/>
+
           </section>
  
  </body>
  </html>
+  
